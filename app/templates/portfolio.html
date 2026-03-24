@@ -1,0 +1,243 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anchal &bull; Full Stack Developer</title>
+  <link rel="icon" type="image/svg+xml" href="{% static 'image/blank-favicon.svg' %}?v=2">
+  <link rel="shortcut icon" href="{% static 'image/blank-favicon.svg' %}?v=2">
+  <link rel="apple-touch-icon" href="{% static 'image/blank-favicon.svg' %}?v=2">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <div class="logo">Anchal Sharma</div>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <div class="container">
+      <div class="hero">
+        <div class="hero-text">
+          <h1>Hi, I'm <span>Anchal Sharma</span></h1>
+          <p class="role">Full Stack Developer</p>
+          <p class="bio">
+            I build responsive websites using HTML, CSS, and JavaScript.<br>
+            Currently learning Full Stack Development.
+          </p>
+          <div class="btns">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="{% static 'image/anchal.jpeg' %}" alt="Anchal">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Who I Am</h3>
+          <p>Web developer from Hamirpur who loves creating clean and good-looking websites.</p>
+        </div>
+        <div class="about-card">
+          <h3>What I Do</h3>
+          <p>HTML &bull; CSS &bull; JavaScript &bull; Responsive Design &bull; Learning Python and Backend</p>
+        </div>
+        <div class="about-card">
+          <h3>My Goal</h3>
+          <p>Build websites and applications that people love to use every day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2>My Core Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+          <p>Semantic markup, accessibility</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+          <p>Responsive design, Flexbox, Grid</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, interactivity</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+          <p>Programming basics and backend intro</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="{% static 'image/scratchimg.png' %}" alt="Scratch Card">
+          <div class="project-info">
+            <h3>Scratch to Reveal Reward</h3>
+            <p>A scratch card game built using HTML, CSS, and JavaScript, where users can scratch off to reveal hidden
+              messages or prizes. Features interactive UI and smooth scratch effect.</p>
+            <a href="http://127.0.0.1:5501/fronend/scratchcard.html" target="_blank" rel="noopener noreferrer"
+              class="project-btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="{% static 'image/ecommerce.png' %}" alt="E-commerce">
+          <div class="project-info">
+            <h3>E-Commerce Platform</h3>
+            <p>A basic e-commerce website with product listing, built with HTML, CSS, and JavaScript. Future updates
+              will include cart and checkout features.</p>
+            <a href="http://127.0.0.1:5501/fronend/projectmin%203rd%20sem/Project3rd%20sem/webdevelop/webproject/shop.html"
+              target="_blank" rel="noopener noreferrer" class="project-btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="{% static 'image/atm.png' %}" alt="ATM">
+          <div class="project-info">
+            <h3>ATM Machine Simulation</h3>
+            <p>A web-based ATM interface built using HTML, CSS, and JavaScript. Users can check their balance, withdraw,
+              and deposit money with PIN validation.</p>
+            <a href="http://127.0.0.1:5500/Atm.html" target="_blank" rel="noopener noreferrer" class="project-btn">View
+              Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blogs -->
+  <section id="blogs">
+    <div class="container">
+      <h2>Blogs</h2>
+      <div class="blogs-grid">
+        <article class="blog-card">
+          <span class="blog-tag">Frontend</span>
+          <h3>How I Build Responsive Web Pages</h3>
+          <p>I focus on clean layouts, flexible grids, and mobile-first styling so websites feel smooth on every screen
+            size.</p>
+          <p>I start by structuring content with semantic HTML, then I use CSS Grid and Flexbox to create layouts that
+            adapt well on mobile, tablet, and desktop. I also test spacing, font sizes, and buttons carefully so the
+            design feels simple and easy to use.</p>
+        </article>
+
+        <article class="blog-card">
+          <span class="blog-tag">Learning</span>
+          <h3>My Journey into Full Stack Development</h3>
+          <p>From HTML and CSS basics to learning Python and backend concepts, I am building projects that improve my
+            skills every day.</p>
+          <p>I began with small frontend projects and gradually moved into JavaScript logic, Django basics, and backend
+            learning. Every new project helps me understand real website structure, form handling, and how frontend and
+            backend work together.</p>
+        </article>
+
+        <article class="blog-card">
+          <span class="blog-tag">Projects</span>
+          <h3>What I Learn from Every New Project</h3>
+          <p>Each website teaches me something new about design, user experience, and writing better code with
+            confidence.</p>
+          <p>While building projects, I learn how to organize code, improve styling, solve layout issues, and make pages
+            more interactive. These practical lessons help me become faster, more creative, and more confident with each
+            new build.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p class="contact-intro">
+        Have a question or project idea? Send me a message!
+      </p>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p><strong>Email:</strong><br>
+            <a href="mailto:anchalsharmak123@gmail.com">anchalsharmak123@gmail.com</a>
+          </p>
+          <p><strong>Location:</strong><br> Hamirpur / Chandigarh, India</p>
+
+          <div class="social-icons">
+            <a href="https://github.com/anchalk123" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/anchal-sharma-a77026356" target=" _blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/7876838903" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/Anchal_sharma23" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i
+                class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+
+        <form method="POST" class="contact-form">
+          {% csrf_token %}
+          <div class="form-status" aria-live="polite"></div>
+          <div class="form-group">
+            <label for="yourname">Your Name</label>
+            <input id="yourname" type="text" name="yourname" required>
+          </div>
+          <div class="form-group">
+            <label for="youremail">Your Email</label>
+            <input id="youremail" type="email" name="youremail" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+
+      <p class="footer-note">
+        &copy; 2026 Anchal Sharma
+      </p>
+    </div>
+  </section>
+
+  <script src="{% static 'js/portfolio.js' %}"></script>
+
+</body>
+
+</html>
